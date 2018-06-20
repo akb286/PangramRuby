@@ -11,7 +11,7 @@ class PangramTest < Minitest::Test
   end
 
   def test_recognizes_a_perfect_lower_case_pangram
-    
+
     phrase = 'abcdefghijklmnopqrstuvwxyz'
     result = Pangram.pangram?(phrase)
     assert result, "Expected true, got: #{result.inspect}. #{phrase.inspect} IS a pangram"
@@ -90,8 +90,4 @@ class PangramTest < Minitest::Test
   # If you are curious, read more about constants on RubyDoc:
   # http://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/constants.html
 
-  def test_bookkeeping
-
-    assert_equal 6, BookKeeping::VERSION
-  end
 end

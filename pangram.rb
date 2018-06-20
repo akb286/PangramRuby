@@ -3,7 +3,7 @@ class Pangram
 
 	def self.pangram?(string)
 
-		return true if ("a".."z").all? {|x| string.include?(x)}
+		return true if ("a".."z").all? {|x| string.downcase.include?(x)}
 	end
 
 
